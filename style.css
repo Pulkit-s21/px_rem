@@ -206,4 +206,7 @@ footer span{
         font-size: 1.6rem;
         animation: spin 3s ease-in-out infinite alternate;
     }
+    footer{
+        font-size: .9rem;
+    }
 }
