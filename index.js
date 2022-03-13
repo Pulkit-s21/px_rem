@@ -1,6 +1,17 @@
-let pxBox = document.querySelector('#pixel');
-let remBox = document.querySelector('#rem');
-let baseSize = document.querySelector("#base");
+const pxBox = document.querySelector('#pixel');
+const remBox = document.querySelector('#rem');
+const baseSize = document.querySelector("#base");
+const scrollLine = document.querySelector(".scroll-line");
+const html = document.querySelector("html");
+
+window.addEventListener("scroll",()=>{
+    let winTop = window.scrollY;
+    let scrollHeight = html.scrollHeight;
+    let clientHeight = html.clientHeight;
+    let scrolled = (winTop/(scrollHeight - clientHeight)) * 100;
+
+    scrollLine.style.width = `${scrolled}%`;
+});
 
 window.addEventListener("load", (e) => {
     pxBox.value = "10";

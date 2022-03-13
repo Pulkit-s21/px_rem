@@ -13,12 +13,22 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 100vh;
     font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
 }
 
 a{
     text-decoration: none;
+}
+
+.scroll-line{
+    height: 2px;
+    width: 0%;
+    background-color: #1a79ff;
+    margin-bottom: -2px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .container{
