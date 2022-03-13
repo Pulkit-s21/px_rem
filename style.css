@@ -10,6 +10,7 @@
 
 html,body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
@@ -94,6 +95,7 @@ abbr::before{
     color: #1a79ff;
     font-size: 1.1rem;
     animation: spin 3s ease-in-out infinite alternate;
+    cursor: pointer;
 }
 
 @keyframes spin {
@@ -147,7 +149,7 @@ abbr::before{
     border: 1px solid rgb(185, 181, 181);
     border-radius: 50%;
     padding: .5rem;
-    transition: all 200ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .socials a:hover,
@@ -156,13 +158,33 @@ abbr::before{
     opacity: .7;
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+footer span{
+    color: #2690d4;
+    cursor: pointer;
+}
+
 @media (max-width: 1200px){
     .inputs{
         flex-direction: column;
     }
     .inputs input{
-        width: 15rem;
-        font-size: 1.2rem;
+        width: 25rem;
+        font-size: 2rem;
     }
     abbr{
         font-size: 1rem;
