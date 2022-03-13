@@ -159,7 +159,7 @@ abbr::before{
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: #000;
     color: #fff;
