@@ -12,7 +12,8 @@ pxBox.addEventListener("input", (e) => {
     // console.log(e.target.value);
     // console.log(e.target.value * 0.0625);
 
-    remBox.value = e.target.value / baseSize.value;
+    remBox.value = Math.round(((e.target.value / baseSize.value) + Number.EPSILON) * 100) / 100;
+    Math.round((rem + Number.EPSILON) * 100) / 100;
     remBox.style.color = "#1a79ff";
     pxBox.style.color = "#000";
 });
@@ -21,7 +22,7 @@ remBox.addEventListener("input", (e) => {
     // console.log(e.target.value);
     // console.log(e.target.value / 0.0625);
 
-    pxBox.value = e.target.value * baseSize.value;
+    pxBox.value = Math.round(((e.target.value * baseSize.value) + Number.EPSILON) * 100) / 100;
     pxBox.style.color = "#1a79ff";
     remBox.style.color = "#000";
 });
